@@ -38,12 +38,9 @@ export default function Hero() {
                 })
             }}
             animate={controls}
-            className="flex border border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab"
-            style={{ touchAction: 'none' }}
-        >
-            {/* Responsive scale wrapper */}
-            <div className="transform origin-top-left scale-[0.95] sm:scale-100">
-                <div className="border space-y-10 p-6 bg-[radial-gradient(circle_at_12%_23%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl w-[34rem]">
+            className="flex border border-neutral-800/50 z-0 w-[35rem] rounded-2xl flex-col p-0.5 cursor-grab"
+            style={{ touchAction: 'none' }}>
+                <div className="border space-y-10 p-6 bg-[radial-gradient(circle_at_12%_23%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl ">
                     <div className="flex justify-between items-start">
                         <div className="flex items-center gap-6">
                             <Image
@@ -93,7 +90,6 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-            </div>
         </motion.div>
     )
 }
