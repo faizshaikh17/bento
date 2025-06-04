@@ -33,9 +33,9 @@ export default function Skills() {
                         <p>STACK</p>
                     </div>
                 </div>
-                
+
                 <div className="group relative h-2 w-full bg-neutral-800 rounded-2xl overflow-hidden">
-                    <div className="absolute left-0 top-0 h-full bg-white loading-bar group-hover:animate-grow"></div>
+                    <div className="absolute left-0 top-0 h-full bg-white w-0 opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-1000 ease-in-out"></div>
                 </div>
 
 
