@@ -23,7 +23,7 @@ export default function Skills() {
             className="flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab"
             style={{ touchAction: 'none' }}
         >
-            <div className="border space-y-4 h-full w-[18rem] sm:p-4 p-2 bg-[radial-gradient(circle_at_15%_18%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl">
+            <div className="border space-y-8 h-full w-[18rem] sm:p-4 p-2 bg-[radial-gradient(circle_at_15%_18%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl">
                 <div className='flex flex-col text-6xl gap-4 font-bold'>
                     <div className='flex gap-3 hover:gap-6 transition-all duration-300 ease-in-out'>
                         <span>{"{"}</span><span>{"}"}</span>
