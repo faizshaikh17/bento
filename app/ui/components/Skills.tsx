@@ -6,7 +6,7 @@ export default function Skills() {
     const controls = useAnimation()
     const frontendSkills = ['React', 'NextJs', 'JavaScript', 'TypeScript', 'TailwindCSS',]
     const backendSkills = ['Nodejs', 'Expressjs']
-    const toolsServices = ['MongoDB', 'Postman', 'Git', 'Github']
+    const toolsServices = ['MongoDB', 'Postman', 'Git', 'Github', 'Appwrite']
 
     return (
         <motion.div
