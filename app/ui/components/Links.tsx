@@ -43,7 +43,7 @@ export default function Links() {
                 {
                     contactList.map(item => (
                         <>
-                            <a href={item.link} target="_blank" rel="noopener noreferrer">
+                            <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer">
                                 <Image
                                     src={item.image}
                                     alt={item.name}
