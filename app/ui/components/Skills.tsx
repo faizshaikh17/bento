@@ -28,9 +28,9 @@ export default function Skills() {
         >
             <div onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="border space-y-4 h-full w-[18rem] sm:p-4 p-2 bg-[radial-gradient(circle_at_15%_18%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl">
+                className="border space-y-4 h-full w-[18rem] sm:p-4 p-2 bg-[radial-gradient(circle_at_98%_10%,_rgba(255,255,255,0.09)_5%,_#111111_25%)] border-neutral-800/50 z-1 rounded-2xl">
                 <div className='flex flex-col text-6xl gap-4 font-bold'>
-                    <div className='flex gap-3 hover:gap-6 transition-all duration-300 ease-in-out'>
+                    <div className={clsx('flex ', isHovered ? 'gap-6 transition-all duration-300 ease-in-out' : 'gap-3')}>
                         <span>{"{"}</span><span>{"}"}</span>
                     </div>
                     <div>
@@ -100,6 +100,6 @@ export default function Skills() {
                 </div>
 
             </div>
-        </motion.div>
+        </motion.div >
     )
 }
