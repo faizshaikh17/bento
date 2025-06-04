@@ -98,7 +98,15 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-
+                <a href="https://drive.google.com/file/d/1EvzkKkQJnW7rtqYBEhTd7V3MIRupmYVv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <div
+                        className="flex border h-fit  border-neutral-800/50 z-0 rounded-md flex-col p-1 cursor-grab"
+                        style={{ touchAction: 'none' }}>
+                        <div className="border flex text-[3.5rem] h-14 justify-center text-black  font-bold bg-yellow-400 items-center border-neutral-800/50 z-1 rounded-md ">
+                            <p>Resume.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </motion.div >
     )
