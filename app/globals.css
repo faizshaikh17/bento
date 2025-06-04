@@ -43,6 +43,24 @@ body {
       animation: beat 2s infinite ease-in-out;
     }
 
+    
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .animate-grow {
+    animation: grow 2s ease-in-out forwards;
+  }
+}
+
+
+
     .mono {
        font-family: var(--font-space-mono), sans-serif;
     }
