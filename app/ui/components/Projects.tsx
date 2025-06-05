@@ -52,7 +52,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className='flex flex-wrap justify-center items-center gap-4 sm:gap-6 px-2'>
+            <div className='flex flex-wrap justify-between items-center gap-4 sm:gap-5'>
                 {
                     projectDetails.map((item) => (
 
@@ -68,11 +68,11 @@ export default function Projects() {
                                 })
                             }}
                             animate={controls}
-                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab w-[85vw] sm:w-[13rem]`}
+                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab sm:w-[13.5rem]`}
                             style={{ touchAction: 'none' }}
                         >
                             <div
-                                className="border flex h-[7rem] sm:h-[8rem] w-full flex-col gap-4 items-center justify-end p-4 border-neutral-800/50 z-1 rounded-2xl"
+                                className="border flex h-[7rem] sm:h-[9rem] w-full flex-col items-center justify-end p-4 border-neutral-800/50 z-1 rounded-2xl"
                                 style={{
                                     backgroundImage: `url(${item.image})`,
                                     backgroundSize: 'cover',

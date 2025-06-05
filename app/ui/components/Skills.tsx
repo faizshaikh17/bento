@@ -102,7 +102,7 @@ export default function Skills() {
                     <div
                         className="flex border h-fit  border-neutral-800/50 z-0 rounded-md flex-col p-0.5 cursor-grab"
                         style={{ touchAction: 'none' }}>
-                        <div className="border bg-gradient-to-r from-white to-neutral-600 bg-clip-text text-transparent flex text-[3.5rem] h-14 justify-center font-bold items-center border-neutral-800/50 z-1 rounded-md ">
+                        <div className="border font-mono bg-yellow-600 flex text-black text-[3.8rem] h-14 justify-center font-bold items-center border-neutral-800/50 z-1 rounded-md ">
                             <p>Resume.</p>
                         </div>
                     </div>
