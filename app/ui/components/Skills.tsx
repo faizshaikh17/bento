@@ -33,7 +33,7 @@ export default function Skills() {
                     <div className={clsx('flex ', isHovered ? 'gap-6 transition-all duration-300 ease-in-out' : 'gap-3')}>
                         <span>{"{"}</span><span>{"}"}</span>
                     </div>
-                    <div>
+                    <div className='bg-gradient-to-r from-white to-black/50 bg-clip-text text-transparent'>
                         <p>TECH</p>
                         <p>STACK</p>
                     </div>
@@ -100,9 +100,9 @@ export default function Skills() {
                 </div>
                 <a href="https://drive.google.com/file/d/1EvzkKkQJnW7rtqYBEhTd7V3MIRupmYVv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <div
-                        className="flex border h-fit  border-neutral-800/50 z-0 rounded-md flex-col p-1 cursor-grab"
+                        className="flex border h-fit  border-neutral-800/50 z-0 rounded-md flex-col p-0.5 cursor-grab"
                         style={{ touchAction: 'none' }}>
-                        <div className="border flex text-[3.5rem] h-14 justify-center text-black  font-bold bg-yellow-400 items-center border-neutral-800/50 z-1 rounded-md ">
+                        <div className="border bg-gradient-to-r from-white to-neutral-600 bg-clip-text text-transparent flex text-[3.5rem] h-14 justify-center font-bold items-center border-neutral-800/50 z-1 rounded-md ">
                             <p>Resume.</p>
                         </div>
                     </div>
