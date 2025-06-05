@@ -55,35 +55,38 @@ export default function Projects() {
             <div className='flex flex-wrap justify-center items-center gap-4 sm:gap-6 px-2'>
                 {
                     projectDetails.map((item) => (
-                        <a key={item.name} href={item.live} target="_blank" rel="noopener noreferrer">
-                            <motion.div
-                                drag
-                                dragElastic={1}
-                                onMouseUpCapture={() => {
-                                    controls.start({
-                                        x: 0,
-                                        y: 0,
-                                        transition: { type: 'spring', stiffness: 100, damping: 50 }
-                                    })
+
+                        <motion.div
+                            key={item.name}
+                            drag
+                            dragElastic={1}
+                            onMouseUpCapture={() => {
+                                controls.start({
+                                    x: 0,
+                                    y: 0,
+                                    transition: { type: 'spring', stiffness: 100, damping: 50 }
+                                })
+                            }}
+                            animate={controls}
+                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab w-[85vw] sm:w-[13rem]`}
+                            style={{ touchAction: 'none' }}
+                        >
+                            <div
+                                className="border flex h-[7rem] sm:h-[8rem] w-full flex-col gap-4 items-center justify-end p-4 border-neutral-800/50 z-1 rounded-2xl"
+                                style={{
+                                    backgroundImage: `url(${item.image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
                                 }}
-                                animate={controls}
-                                className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab w-[85vw] sm:w-[13rem]`}
-                                style={{ touchAction: 'none' }}
                             >
-                                <div
-                                    className="border flex h-[7rem] sm:h-[8rem] w-full flex-col gap-4 items-center justify-end p-4 border-neutral-800/50 z-1 rounded-2xl"
-                                    style={{
-                                        backgroundImage: `url(${item.image})`,
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center',
-                                    }}
-                                >
+                                <a href={item.live} target="_blank" rel="noopener noreferrer">
                                     <p className='text-lg mono sm:text-xl font-bold text-center hover:underline hover:text-yellow-500'>
                                         {item.name}
                                     </p>
-                                </div>
-                            </motion.div>
-                        </a>
+                                </a>
+                            </div>
+                        </motion.div>
+
                     ))
                 }
             </div>

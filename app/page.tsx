@@ -11,7 +11,7 @@ export default function Home() {
           backgroundImage:
             `linear-gradient(to right, #181717 1px, transparent 1px),
           linear-gradient(to bottom, #181717 1px, transparent 1px)`,
-          backgroundSize: '40px 40px'
+          backgroundSize: '3px 3px'
         }} />
       <SkillsWrapper />
       <div className="flex flex-col gap-6 w-full md:w-auto">
