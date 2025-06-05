@@ -55,25 +55,26 @@ export default function Projects() {
             <div className='flex flex-wrap justify-center items-center gap-6'>
 
                 {
-                    projectDetails.map(item => (
-                        <motion.div
-                            key={item.name}
-                            drag
-                            dragElastic={1}
-                            onMouseUpCapture={() => {
-                                controls.start({
-                                    x: 0,
-                                    y: 0,
-                                    transition: { type: 'spring', stiffness: 100, damping: 50 }
-                                })
-                            }}
-                            animate={controls}
-                            className="flex border h-fit  border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab"
-                            style={{ touchAction: 'none' }}>
-                            <div className="border flex h-[8rem] w-[13rem]  flex-col gap-6 items-center p-4 border-neutral-800/50 z-1 rounded-2xl ">
-                                {item.name}
-                            </div>
-                        </motion.div>
+                    projectDetails.map((item) => (
+                        <a key={item.name} href={item.live} target="_blank" rel="noopener noreferrer">
+                            <motion.div
+                                drag
+                                dragElastic={1}
+                                onMouseUpCapture={() => {
+                                    controls.start({
+                                        x: 0,
+                                        y: 0,
+                                        transition: { type: 'spring', stiffness: 100, damping: 50 }
+                                    })
+                                }}
+                                animate={controls}
+                                className="flex border h-fit  border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab"
+                                style={{ touchAction: 'none' }}>
+                                <div className="border flex h-[8rem] w-[13rem]  flex-col gap-6 items-center justify-center p-4 border-neutral-800/50 z-1 rounded-2xl ">
+                                    <p className='text-2xl font-bold hover:underline hover:text-yellow-500'>{`${item.name}`}</p>
+                                </div>
+                            </motion.div>
+                        </a>
 
                     ))
                 }
