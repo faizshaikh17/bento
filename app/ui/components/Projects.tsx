@@ -1,5 +1,4 @@
 import { motion, useAnimation } from 'framer-motion'
-import { url } from 'inspector'
 
 export default function Projects() {
     const controls = useAnimation()
