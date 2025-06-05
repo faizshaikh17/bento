@@ -42,17 +42,17 @@ export default function Links() {
                 </span>
                 {
                     contactList.map(item => (
-                    
-                            <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer">
-                                <Image
-                                    src={item.image}
-                                    alt={item.name}
-                                    width={50}
-                                    height={30}
-                                    priority
-                                />
-                            </a>
-                        
+
+                        <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src={item.image}
+                                alt={item.name}
+                                width={50}
+                                height={30}
+                                priority
+                            />
+                        </a>
+
                     ))
                 }
 
