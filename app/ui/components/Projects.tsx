@@ -52,7 +52,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className='flex flex-wrap justify-between items-center gap-4 sm:gap-5'>
+            <div className='flex flex-wrap justify-center items-center gap-2 sm:gap-4'>
                 {
                     projectDetails.map((item) => (
 
@@ -68,10 +68,10 @@ export default function Projects() {
                                 })
                             }}
                             animate={controls}
-                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab sm:w-[13.5rem]`}
+                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab sm:w-[13.7rem]`}
                             style={{ touchAction: 'none' }}
                         >
-                            <div
+                            <a href={item.live} target="_blank" rel="noopener noreferrer"
                                 className="border flex h-[7rem] sm:h-[9rem] w-full flex-col items-center justify-end p-4 border-neutral-800/50 z-1 rounded-2xl"
                                 style={{
                                     backgroundImage: `url(${item.image})`,
@@ -79,12 +79,12 @@ export default function Projects() {
                                     backgroundPosition: 'center',
                                 }}
                             >
-                                <a href={item.live} target="_blank" rel="noopener noreferrer">
-                                    <p className='text-lg mono sm:text-xl font-bold text-center hover:underline hover:text-yellow-500'>
+                                {/* <a href={item.live} target="_blank" rel="noopener noreferrer"> */}
+                                    {/* <p className='text-lg mono sm:text-xl font-bold text-center hover:underline hover:text-yellow-500'>
                                         {item.name}
-                                    </p>
-                                </a>
-                            </div>
+                                    </p> */}
+                                {/* </a> */}
+                            </a>
                         </motion.div>
 
                     ))

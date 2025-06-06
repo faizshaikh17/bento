@@ -100,9 +100,9 @@ export default function Skills() {
                 </div>
                 <a href="https://drive.google.com/file/d/1EvzkKkQJnW7rtqYBEhTd7V3MIRupmYVv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <div
-                        className="flex border h-fit  border-neutral-800/50 z-0 rounded-md flex-col p-0.5 cursor-grab"
+                        className='flex border mt-6 border-neutral-800/80 z-0 w-fit rounded-lg flex-col p-0.5 cursor-grab hover:border-white/50'
                         style={{ touchAction: 'none' }}>
-                        <div className="border font-mono bg-yellow-600 flex text-black text-[3.8rem] h-14 justify-center font-bold items-center border-neutral-800/50 z-1 rounded-md ">
+                        <div className="flex font-bold text-2xl border bg-[#181717] px-2  border-neutral-800/50 z-0 rounded-lg flex-col cursor-grab">
                             <p>Resume.</p>
                         </div>
                     </div>
