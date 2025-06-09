@@ -22,7 +22,7 @@ export default function Skills() {
                 })
             }}
             animate={controls}
-            className="flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab"
+            className="flex border h-fit border-neutral-800/50 z-0 w-fit rounded-2xl flex-col p-0.5 cursor-grab"
             style={{ touchAction: 'none' }}
 
         >

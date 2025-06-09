@@ -5,7 +5,7 @@ import ProjectsWrapper from './ui/components/ProjectsWrapper'
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row md:justify-center flex-wrap min-h-screen text-white bg-[#181717] w-full z-0 relative gap-2 p-4">
+    <div className="flex flex-col md:flex-row justify-center flex-wrap min-h-screen text-white bg-[#181717] w-full z-0 relative gap-2 p-4">
       <div className='absolute inset-0 z-0'
         style={{
           backgroundImage:

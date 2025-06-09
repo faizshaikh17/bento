@@ -52,7 +52,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className='flex flex-wrap justify-center items-center gap-2 sm:gap-2'>
+            <div className='flex flex-wrap sm:justify-center items-center gap-2 sm:gap-2'>
                 {
                     projectDetails.map((item) => (
 
@@ -68,7 +68,7 @@ export default function Projects() {
                                 })
                             }}
                             animate={controls}
-                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab sm:w-[13.8rem]`}
+                            className={`flex border h-fit border-neutral-800/50 z-0 rounded-2xl flex-col p-0.5 cursor-grab w-[9.5rem] sm:w-[13.8rem]`}
                             style={{ touchAction: 'none' }}
                         >
                             <a href={item.live} target="_blank" rel="noopener noreferrer"
