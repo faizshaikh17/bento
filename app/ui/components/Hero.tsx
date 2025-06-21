@@ -73,7 +73,7 @@ export default function Hero() {
                                 webapps
                             </motion.h1>
                         </div>
-                        <h3 className="text-lg">Heloo, Faiz a 23-year-old developer based in India</h3>
+                        <h3 className="text-lg">Heloo, Im Faiz a 23-year-old developer based in India</h3>
                     </div>
 
                     <div className="text-gray-400 font-mono text-sm flex justify-between">
