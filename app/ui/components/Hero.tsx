@@ -51,10 +51,10 @@ export default function Hero() {
                                 priority
                                 className="h-20 w-20 rounded-full"
                             />
-                            <div className="flex flex-col gap-1">
-                                <p className="text-2xl font-bold">Faizz</p>
+                            <div className="flex flex-col">
+                                <p className="text-2xl font-bold">Faiz</p>
                                 <a href="https://x.com/iamfaizz17" target="_blank" rel="noopener noreferrer">
-                                    <p className="text-lg">@iamfaizz17</p>
+                                    <p className="text-lg">@faizxtwt</p>
                                 </a>
                             </div>
                         </div>

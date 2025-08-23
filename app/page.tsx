@@ -1,7 +1,7 @@
 import HeroWrapper from './ui/components/HeroWrapper'
-import SkillsWrapper from './ui/components/SkillsWrapper'
-import LinksWrapper from './ui/components/LinksWrapper'
-import ProjectsWrapper from './ui/components/ProjectsWrapper'
+// import SkillsWrapper from './ui/components/SkillsWrapper'
+// import LinksWrapper from './ui/components/LinksWrapper'
+// import ProjectsWrapper from './ui/components/ProjectsWrapper'
 
 export default function Home() {
   return (
@@ -13,13 +13,13 @@ export default function Home() {
           linear-gradient(to bottom, #181717 1px, transparent 1px)`,
           backgroundSize: '5px 5px'
         }} />
-      <SkillsWrapper />
+      {/* <SkillsWrapper /> */}
       <div className="flex flex-col gap-2 w-full md:w-auto">
         <HeroWrapper />
-        <div className="flex flex-col sm:flex-row justify-between gap-2 w-full max-w-[34rem]">
+        {/* <div className="flex flex-col sm:flex-row justify-between gap-2 w-full max-w-[34rem]">
           <ProjectsWrapper />
           <LinksWrapper />
-        </div>
+        </div> */}
       </div>
     </div>
   )
