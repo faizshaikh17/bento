@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export default function Hero() {
     const controls = useAnimation()
@@ -36,7 +37,7 @@ export default function Hero() {
                 })
             }}
             animate={controls}
-            whileHover={{ 
+            whileHover={{
                 scale: 1.01,
                 boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05)",
                 transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] }
@@ -54,13 +55,13 @@ export default function Hero() {
                             width={50}
                             height={30}
                             priority
-                            className="h-20 w-20 rounded-full ring-1 ring-white/10 shadow-lg"
+                            className="h-20 w-20 rounded-full ring-1 ring-white/5 shadow-lg"
                         />
                         <div className="flex flex-col">
                             <p className="text-2xl font-bold tracking-tight">Faiz</p>
-                            <a href="https://x.com/iamfaizz17" target="_blank" rel="noopener noreferrer">
-                                <p className="text-lg text-neutral-400 hover:text-neutral-300 transition-colors duration-300">@faizxtwt</p>
-                            </a>
+                            <Link href="https://x.com/faizxtwt" target="_blank" rel="noopener noreferrer">
+                                <p className="text-[1.1rem] text-neutral-400 hover:text-neutral-300 transition-colors duration-300">@faizxtwt</p>
+                            </Link>
                         </div>
                     </div>
                     <h1 className="font-bold p-3 text-xl text-neutral-200">ファイズ</h1>
@@ -85,7 +86,7 @@ export default function Hero() {
                     <p className="w-34">Why should I center a div again??</p>
                     <div>
                         <span className="flex text-neutral-100 items-center gap-2">
-                            <motion.span 
+                            <motion.span
                                 className="h-[0.5rem] w-[0.5rem] bg-[#00FF0C] rounded-full relative shadow-[0_0_8px_rgba(0,255,12,0.4)]"
                                 animate={{
                                     opacity: [1, 0.7, 1]
